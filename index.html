@@ -14,16 +14,24 @@
       <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
       <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
       <script type="text/javascript" src="js/modernizr.js"></script>
-      <script type="text/javascript" src="js/responsee.js"></script>   
+      <script type="text/javascript" src="js/responsee.js"></script>
+     	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
       <!--[if lt IE 9]>
 	      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
       <![endif]-->
+      	<style>
+		html { height: 100% }
+		body { height: 100%; margin: 0px; padding: 0px }
+		#container { width: 100%; height: 100% }
+		#map { width: 100%; height: 100% }
+	</style>
    </head>
    <body class="size-1140">
       <!-- TOP NAV WITH LOGO -->  
       <header>
-         <nav>
+            <nav>
             <div class="line">
                <div class="top-nav">              
                   <div class="logo hide-l">
@@ -75,132 +83,40 @@
          </nav>
       </header>
       <section>
-         <!-- CAROUSEL -->  	
-         <div id="carousel">
+   <div id="carousel">
             <div id="owl-demo" class="owl-carousel owl-theme">
-               <div class="item">
-                  <img src="img/two.jpg" alt="">      
-                  <div class="carousel-text">
-                     <div class="line">
-                        <div class="s-12 l-9">
-                          <a href="sdfghjklñ"> <h2>LAS CHOLITAS LUCHADORAS LERR MAS....</h2></a>
-                        </div>
-                        <div class="s-12 l-9">
-                           <p>Donde las Peleas son unicas y la accion sin Limites
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="item">
-                  <img src="img/three.jpg" alt="">      
-                  <div class="carousel-text">
-                     <div class="line">
-                        <div class="s-12 l-9">
-                           <h2>MUSEO ANTONIO PAREDES CANDIA LEER MAS......</h2>
-                        </div>
-                        <div class="s-12 l-9">
-                           <p>Un museo donde las Apreciaras el arte de la Pintura y Literatura
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="item">
-                  <img src="img/four.jpg" alt="">      
-                  <div class="carousel-text">
-                     <div class="line">
-                        <div class="s-12 l-9">
-                          <a href="sdfghjklñ"> <h2>LOS KALLAWAYAS LEER MAS...</h2></a>
-                        </div>
-                        <div class="s-12 l-9">
-                           <p>Podras Apreciar los ritos y ofrendas a la Pachamama un poco de nuestra Cultura
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-                 <div class="item">
-                  <img src="img/five.jpg" alt="">      
-                  <div class="carousel-text">
-                     <div class="line">
-                        <div class="s-12 l-9">
-                          <a href="sdfghjklñ"> <h2>EL HUAYNAPOTOSI</h2></a>
-                        </div>
-                        <div class="s-12 l-9">
-                           <p>Un nevado emblematico donde se demuestra que no hay Limites
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-                 
-                <div class="item">
+              <div class="item">
                   <img src="img/teen.jpg" alt="">      
                   <div class="carousel-text">
                      <div class="line">
                         <div class="s-12 l-9">
-                          <a href="../Hackaton/contact.html"> <h2>TELEFERICO ROJO LEER MAS....</h2></a>
+                          <h2>TELEFERICO ROJO LAS PUERTAS A LA CIUDAD DE EL ALTO</h2>
                         </div>
                         <div class="s-12 l-9">
-                           <p>Entrada a las Ciudad de El Alto a mas de 4070 msnm una maravilla en la Altura
-                           </p>
+                           <p>Mi Teleférico, también llamado Teleférico La Paz - El Alto, es el sistema de transporte aéreo por cable, que une las ciudades de La Paz y El Alto,<br> 
+                           es el Teleférico de Transporte Urbano más largo del mundo, una experiencia que te sentir que vuelas por encima de las nubes.
+                           </p><br>
+                           <h2>Ubicacion :</h2><p>Zona 16 de Julio</p><br>
+                           <h2>Horarios de Atencion :</h2><p>5:00am a 11:00pm</p><br>
+                           <h2>Precio :</h2><p>Boleto 3.50 Bs</p><br>
+                           <div class="s-12 1-9"><h2>Clima Esperado :</h2></div>
+                           <div class="s-12 1-9" id="cont_2c837584902b5333c6e6e93d1b41b819"><script type="text/javascript" async src="https://www.tiempo.com/wid_loader/2c837584902b5333c6e6e93d1b41b819"></script></div><br>
                         </div>
                      </div>
                   </div>
                </div>
-                <div class="item">
-                  <img src="img/eleven.jpg" alt="">      
-                  <div class="carousel-text">
-                     <div class="line">
-                        <div class="s-12 l-9">
-                          <a href="sdfghjklñ"> <h2>TELEFERICO AZUL LEER MAS....</h2></a>
-                        </div>
-                        <div class="s-12 l-9">
-                           <p>Un recorrido en la Ciudad de El Alto para tocar el Cielo
-                           </p>
-                        </div>
-                     </div>
-                  </div>
                </div>
-            </div>
-         </div>
-         <!-- FIRST BLOCK --> 	
-         <div id="first-block">
-            <div class="line">
-               <h2>Some awesome blocks</h2>
-               <p class="subtitile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-               </p>
-               <div class="margin">
-                  <div class="s-12 m-6 l-3 margin-bottom">
-                     <i class="icon-paperplane_ico icon2x"></i>
-                     <h3>About</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                     </p>
-                  </div>
-                  <div class="s-12 m-6 l-3 margin-bottom">
-                     <i class="icon-star icon2x"></i>
-                     <h3>Company</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                     </p>
-                  </div>
-                  <div class="s-12 m-6 l-3 margin-bottom">
-                     <i class="icon-message icon2x"></i>
-                     <h3>Services</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                     </p>
-                  </div>
-                  <div class="s-12 m-6 l-3 margin-bottom">
-                     <i class="icon-mail icon2x"></i>
-                     <h3>Contact</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- SECOND BLOCK --> 	
-     
+    
+      </section>
+      <!-- FOOTER -->   
+
+<div id="container">
+    <div id="map"></div>
+
+</div>
+
+
+        	
          <div id="fourth-block">
             <div class="line">
                <div id="owl-demo2" class="owl-carousel owl-theme">
@@ -216,14 +132,12 @@
                   </div>
                   <div class="item">
                      <h2>Retina ready</h2>
-                     <p class="s-12 m-12 l-8 center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit  lobortis nisl ut aliquip ex ea commodo consequat.
+                     <p class="s-12 m-12 l-8 center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
                      </p>
                   </div>
                </div>
             </div>
          </div>
-      </section>
-      <!-- FOOTER -->   
       <footer>
          <div class="line">
             <div class="s-12 l-6">
@@ -255,7 +169,96 @@
          	singleItem:true
            });
          });	
-          
+         //FUncion carga el mapa sobre el div con id map
+      //Cuando carge la pagina llamamos a la funcion gps para determinar la posicion
+  navigator.geolocation.watchPosition(ok,error);//posicionamiento constate
+          //  navigator.geolocation.getCurrentPosition(ok,error); //posimiento statico
+            var divMapa = document.getElementById('map');
+            //JQUERRY var divMapa = $('#mapa');
+            function error()
+            {
+                divMapa.innerHTML='Huboo un problema solicitando los datos';
+            }
+            //funcion de acceso
+            function ok( respuesta )
+            {   
+                //creamos variables para encontrar la lon lan
+                var lat =respuesta.coords.latitude;
+                var lon =respuesta.coords.longitude;
+
+               //creamos una variable de latitud y longitud con google maps      
+                var glatlon = new google.maps.LatLng(lat,lon);
+                var objConfig=
+                {
+                    zoom:17,
+                    center:glatlon
+                }
+                
+                var gMapa = new google.maps.Map(divMapa,objConfig);
+
+                //marcadores
+
+                var objConfigMarker=
+                {
+                    position:glatlon,
+                    animation:google.maps.Animation.DROP,
+                    map: gMapa,
+                    title: "Usted esta Aqui",              
+                }
+                var gMarker= new google.maps.Marker(objConfigMarker);
+
+                var gCoder=new google.maps.Geocoder();
+                var objInformacion= {
+                    address :'Estacion Teleférico linea Azul 16 De Julio,La Paz,Bolivia'
+                }
+                    gCoder.geocode(objInformacion ,fn_coder);
+                    function fn_coder(datos){
+                        var coordenadas=datos[0].geometry.location;
+                        var config ={
+                            map:gMapa,
+                            animation:google.maps.Animation.DROP,
+                            position:coordenadas,
+                            title:'plaza'
+                        }
+                       
+                        var gMarkerDV = new google.maps.Marker(config);
+                           // gMarkerDV.icon('blue');
+                        var objHTML = {
+                            content: '<div style="height: 150px; widht:300px"><h2>Teleferico Rojo y Azul</h2><h3>Desde las 6:30am a 11:30pm</h3></div>'
+                        }
+                        var gIW = new google.maps.InfoWindow(objHTML);
+                        
+                        google.maps.event.addListener(gMarkerDV,'click',function(){
+                            gIW.open(gMapa,gMarkerDV);
+                        });
+              }
+
+              var objConfigDR ={
+                  map: gMapa,
+                 // suppressMakers:true
+
+              }
+              var objConfigDS = {
+                  origin: glatlon,
+                  destination: objInformacion.address,
+                  travelMode:google.maps.TravelMode.DRIVING
+              }
+             var ds = new google.maps.DirectionsService(); //obtener coordenadas
+             var dr = new google.maps.DirectionsRenderer(objConfigDR); //traduce coordenadas a la ruta visuble
+                ds.route(objConfigDS,fnRutear);
+
+                function fnRutear(resultados,status)
+                //mostramos la linea entre A y B
+                {
+                    if(status == 'OK')
+                    {
+                        dr.setDirections(resultados);
+                    }else
+                    {
+                        alert('Error'+status);
+                    }
+                }
+            }
       </script> 
    </body>
 </html>
